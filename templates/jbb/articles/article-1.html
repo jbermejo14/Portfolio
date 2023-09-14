@@ -1,0 +1,27 @@
+{% include 'C:\Users\jimmy\OneDrive\JamesPortfolio\templates\components\navbar.html' %}
+{% load tailwind_tags %}
+{% load static %}
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% tailwind_css %}
+</head>
+<body class="">
+    <div class="text-center h-20">
+        <a class="font-bold align-middle h-auto text-3xl">Decorative Functions</a>
+    </div>
+    <div class="grid grid-cols-2 m-20">
+        <div class="col-span-1">
+            <img class="rounded-lg h-25 w-40" src="../../../static/images/foto3.jpg" alt="">
+        </div>
+        <div class="col-span-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est expedita incidunt mollitia nihil odio officiis optio quam quia, sint totam? Dicta distinctio ea fugiat ipsa maiores quas ratione soluta voluptate.</p>
+        </div>
+   </div>
+</body>
+</html>
+{% endblock %}

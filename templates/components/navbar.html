@@ -1,0 +1,18 @@
+{% load tailwind_tags %}
+{% tailwind_css %}
+<nav class="p-10 items-center h-20 w-screen flex bg-cyan-900 md:bg-cyan-400 text-black">
+
+    <div class="h-full w-1/3 flex items-center text-1xl p-10">
+
+        <a href="{% url 'index' %}" class=" px-4 py-2 rounded-lg hover:bg-gray-200 ease-in-out duration-500 ">SiteTitle</a>
+
+    </div>
+    <div class="h-full w-2/3 flex items-center place-content-end text-1xl">
+
+        <a href="{% url 'index' %}" class="mr-4 px-4 py-2 rounded-lg hover:bg-gray-200 ease-in-out duration-500">Home</a>
+        <a href="{% url 'contact' %}" class="mr-4 px-4 py-2 rounded-lg hover:bg-gray-200 ease-in-out duration-500">Contact me</a>
+        <a href="{% url 'about' %}" class="mr-4 px-4 py-2 rounded-lg hover:bg-gray-200 ease-in-out duration-500">About</a>
+        <a href="{% url 'blog' %}" class="mr-4 px-4 py-2 rounded-lg hover:bg-gray-200 ease-in-out duration-500">Blog</a>
+
+    </div>
+</nav>

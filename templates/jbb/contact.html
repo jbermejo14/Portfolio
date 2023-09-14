@@ -1,0 +1,54 @@
+{% include 'C:\Users\jimmy\OneDrive\JamesPortfolio\templates\components\navbar.html' %}
+{% load tailwind_tags %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+</head>
+<body class="bg-black text-white">
+    <div class="">
+        <div class="text-center">
+            <a class="font-bold h-20">CONTACT</a>
+        </div>
+    </div>
+    <div class="text-center m-8 ">
+        <p>
+            You can send me feedback, suggestions and questions by emailing me at jpbermejobramley@gmail.com or you can complete the form underneath this text
+        </p>
+    </div>
+    <table>
+    <form class="grid justify-items-center mx-8 rounded-lg text-white" action="" method="post">
+        <input class=" text-white" type="hidden" name="csrfmiddlewaretoken" value="yTF5g7ceTgkwsOimKxZpuV10DG4a1TWFwQ60pneu047lPvu6kTAlNYPfYEC9G8jq">
+        <tr>
+            <th>
+                <label for="id_email">Email:</label>
+            </th>
+            <td>
+                <input class="mb-8 rounded-lg shadow shadow-black-600/100 hover:shadow-black" type="email" name="email" maxlength="254" required id="id_email">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="id_subject">Subject:</label>
+            </th>
+            <td>
+                <input class="mb-8 rounded-lg shadow shadow-black-600/100 hover:shadow-black" type="text" name="subject" maxlength="255" required id="id_subject">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="id_message">Message:</label>
+            </th>
+            <td>
+                <textarea class="rounded-lg shadow shadow-black-600/100 hover:shadow-black bg-black" name="message" cols="40" rows="10" required id="id_message"></textarea>
+            </td>
+        </tr>
+
+    </form>
+    </table>
+    <div class="text-center mt-4 mb-8">
+        <input class="mt-4 px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 ease-in-out duration-500" type="submit" value="Submit">
+    </div>
+</body>
+</html>
+{% include 'C:\Users\jimmy\OneDrive\JamesPortfolio\templates\components\footer.html' %}
